@@ -1,5 +1,6 @@
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
+<!-- <app-server></app-server> -->
 
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 
@@ -7,7 +8,7 @@
 
 <!-- <p>{{ serverName }}</p> -->
 
-<!-- <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button> -->
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
 
 <!-- <p>{{ serverCreationStatus }}</p> -->
 
